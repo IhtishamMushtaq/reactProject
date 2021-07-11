@@ -85,8 +85,10 @@ right: 10px;
     justify-content: center;
     align-self: center;
     padding: 10px;
+    padding-bottom: 20px;
     width: 300px;
     margin: 10px auto;
+    border-bottom: 2px solid black;
 }
 .card h1{
     text-transform: uppercase;
@@ -196,6 +198,8 @@ align-items: center;
 @media only screen and (min-width: 768px) {
    .card{
        display: inline-flex;
+       border: none;
+       
    }
     #heroIntro{
         transform: scale(1.5);
