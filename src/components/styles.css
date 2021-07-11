@@ -1,0 +1,93 @@
+.cart{
+    height: 70vh;
+    background: linear-gradient(to bottom, black, transparent),
+    url("../components/images/background.jpg");
+    background-size: cover;
+    background-position: top center;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cart h1{
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    font-size: 40px;
+    letter-spacing: 3px;
+    
+}
+.linkContainer{
+display: flex;
+width: 50%;
+position: absolute;
+top: 5px;
+right: 10px;
+
+}
+.pageNavigator{
+    font-size: 20px;
+    margin: 10px 10px;
+    text-transform: uppercase;
+    color: white;
+}
+#headerIntro{
+    width: fit-content;
+    margin: 10px auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+}
+#filterButton{
+    margin: 5px auto;
+    width: fit-content;
+}
+#filterHead{
+    margin: 10px auto;
+    width: fit-content;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+.btn-wrapper{
+    display: flex;
+    justify-content: space-around; 
+}
+.btn-wrapper button{
+    background: none;
+text-transform: uppercase;
+font-size: 12px;
+padding: 5px 8px;
+border: 1px solid black;
+border-radius: 5px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.card h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    margin: 15px auto;
+    text-align: center;
+}
+.card img{
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.card p{
+    text-transform: uppercase;
+    width: 60%;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 10px auto;
+}
+.card h4{
+    text-transform: uppercase;
+    margin: 5px auto;
+    letter-spacing: 2px;
+}
