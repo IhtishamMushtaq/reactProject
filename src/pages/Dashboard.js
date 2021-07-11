@@ -33,7 +33,7 @@ function Dashboard() {
     } else if (id === "all") {
       setPizzaList(cpyPizza);
     }
-    
+    console.log(sortedList);
   };
 
   useEffect(() => {
