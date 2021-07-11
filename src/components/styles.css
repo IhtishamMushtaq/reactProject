@@ -1,4 +1,5 @@
 .cart{
+    min-width: 320px;
     height: 70vh;
     background: linear-gradient(to bottom, black, transparent),
     url("../components/images/background.jpg");
@@ -11,6 +12,7 @@
     align-items: center;
 }
 .cart h1{
+    
     color: white;
     text-align: center;
     line-height: 60px;
@@ -19,30 +21,31 @@
     
 }
 .linkContainer{
+ 
 display: flex;
-width: 50%;
+width: fit-content;
 position: absolute;
 top: 5px;
 right: 10px;
 
 }
 .pageNavigator{
+    width: 30px;
     font-size: 20px;
     margin: 10px 10px;
     text-transform: uppercase;
     color: white;
 }
 #headerIntro{
+    
     width: fit-content;
     margin: 10px auto;
     padding-bottom: 5px;
     border-bottom: 2px solid red;
 }
-#filterButton{
-    margin: 5px auto;
-    width: fit-content;
-}
+
 #filterHead{
+    
     margin: 10px auto;
     width: fit-content;
     font-weight: bold;
@@ -51,22 +54,36 @@ right: 10px;
     font-size: 18px;
 }
 .btn-wrapper{
+    max-width: 768px;
+    margin: 10px auto;
     display: flex;
-    justify-content: space-around; 
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
 }
 .btn-wrapper button{
     background: none;
-text-transform: uppercase;
-font-size: 12px;
-padding: 5px 8px;
-border: 1px solid black;
-border-radius: 5px;
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px auto;
+
+}
+.card-container{
+    display: flexbox;
+    justify-content: center;
+    margin: 0 auto;
 }
 .card{
-    display: flex;
+
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
+    width: 300px;
 }
 .card h1{
     text-transform: uppercase;
@@ -90,4 +107,76 @@ border-radius: 5px;
     text-transform: uppercase;
     margin: 5px auto;
     letter-spacing: 2px;
+}
+.card button{
+    width: fit-content;
+    padding: 5px 10px;
+    margin: 10px auto;
+    background:none;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+/* cart styling */
+#cartDisplay{
+    display: flex;
+    width: 100%
+}
+.cartItems{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    margin: 10px auto;
+    border-bottom: 2px solid black;
+    padding-bottom: 20px;
+    
+}
+.itemImage{
+    width: 200px;
+    border-radius: 30px;
+
+}
+.itemDescription{
+margin: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.itemDescription h1{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.itemDescription p{
+    font-size: 12px;
+    text-align: center;
+    margin: none;
+}
+.itemDescription button{
+    width: fit-content;
+    margin: 10px auto;
+    background:none;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+#clearButton{
+    background: none;
+    border: 2px solid black;
+    padding: 5px 10px;
+    margin: 10px 10px;
+    width: fit-content;
+    float: right;
+    border-radius: 10px;
+
+}
+#totalAmount{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px auto;
+    width: 90%;
+    text-align: center;
+    text-transform: uppercase;
 }

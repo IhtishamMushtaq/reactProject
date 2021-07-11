@@ -2,26 +2,16 @@ import React, { useState, useEffect } from "react";
 import Card from "../components/Card";
 import Header from "../components/Header";
 import "../components/styles.css"
-import img from "../components/images/filter.png"
 
-let clickCount=0;
+
+
 function Dashboard() {
   const [pizzaList, setPizzaList] = useState([]);
   const [cpyPizza, setCpyPizz] = useState([]);
   const copy=[...pizzaList];
   
  
-const displayFilters=()=>{
-  if(clickCount==0)
-{  document.getElementById("Button-wrap").style.left="0%";
-clickCount=1;
-}
-else{
-  document.getElementById("Button-wrap").style.left="-100%";
-  clickCount=0;
-}
 
-}
 
   const sortPizzaList = (id) => {
     let sortedList;

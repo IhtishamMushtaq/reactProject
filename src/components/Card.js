@@ -10,7 +10,7 @@ function Card({ id, name, img_url, description, isVeg, price, rating }) {
       type: "ADD_TO_BASKET",
       payload: { id, name, img_url, description, isVeg, price, rating },
     });
-    // alert("item added to cart");
+    alert("item added to cart");
   };
 
   return (
