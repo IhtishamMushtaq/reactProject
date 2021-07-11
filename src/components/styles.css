@@ -1,10 +1,10 @@
 .cart{
     min-width: 320px;
-    height: 70vh;
+    height: 55vh;
     background: linear-gradient(to bottom, black, transparent),
     url("../components/images/background.jpg");
-    background-size: cover;
-    background-position: top center;
+    background-size: cover ;
+    background-position:center;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -79,13 +79,14 @@ right: 10px;
 }
 .card{
     
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     align-self: center;
     padding: 10px;
     width: 300px;
+    margin: 10px auto;
 }
 .card h1{
     text-transform: uppercase;
@@ -188,8 +189,14 @@ align-items: center;
     .card{
         width: 330px;
     }
+    #heroIntro{
+        font-size: 40px;
+    }
 }
 @media only screen and (min-width: 768px) {
+   .card{
+       display: inline-flex;
+   }
     #heroIntro{
         transform: scale(1.5);
     }
