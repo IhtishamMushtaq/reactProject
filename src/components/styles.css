@@ -239,6 +239,10 @@ align-items: center;
     .card{
         width: 320px;
     }
+    .linkContainer a img{
+        transform: scale(1.6);
+        margin: 20px;
+    }
     #headerIntro{
         font-size: 30px;
     }
