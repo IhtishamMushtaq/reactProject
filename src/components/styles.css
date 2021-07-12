@@ -187,6 +187,35 @@ align-items: center;
     text-align: center;
     text-transform: uppercase;
 }
+.footerWrapper{
+    background-color: rgba(20, 20, 97, 0.747);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100% ;
+    margin: 10px auto;
+}
+.footerWrapper ul{
+    text-align: left;
+    color: white;
+    letter-spacing: 2px;
+}
+.footerWrapper div{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+}
+.footerWrapper ul li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    
+    text-transform: uppercase;
+    margin: 10px 20px;
+    text-align: left;
+
+}
 @media only screen and (min-width: 375px) {
     .card{
         width: 330px;
