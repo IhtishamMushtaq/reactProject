@@ -205,14 +205,15 @@ align-items: center;
     display: flex;
     width: 60%;
     margin: 0 auto;
+    justify-content: center;
 }
 .footerWrapper ul li{
     list-style: none;
     font-size: 14px;
     font-weight: bold;
-    
+    width: fit-content;
     text-transform: uppercase;
-    margin: 10px 20px;
+    margin: 15px 10px;
     text-align: left;
 
 }
