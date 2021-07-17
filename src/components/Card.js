@@ -10,7 +10,7 @@ import "../components/styles.css"
 
 function Card({ id, name, img_url, description, isVeg, price, rating,size,toppings }) {
   const { dispatch } = useGlobalContext();
-const [sizeSelected,changeSize]=useState("Regular");
+const [sizeSelected,changeSize]=useState("");
 const [toppingName, setToppingName]=React.useState([])
 
 const [toppingsSelected]=useState([]);

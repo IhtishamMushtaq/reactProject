@@ -44,7 +44,7 @@ function Cart() {
                                     <p>Type : {isVeg ? "Veg" : "Non Veg"}</p>
                                     <p>Price: INR {price} /-</p>
                                     <p>Rating: {rating}/5</p>
-                                    <p>{sizeSelected}</p>
+                                    <p>{sizeSelected?sizeSelected:"Regular"}</p>
                                     {/* {toppingsSelected.map(item=><h3>{item}</h3>)} */}
                                     {toppingName.map(name=><h1>{name}</h1>)}
                                     <button
