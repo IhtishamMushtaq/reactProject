@@ -29,7 +29,8 @@ function Cart() {
                 <h1 style={{fontSize:"20px",color:"red",textTransform:"uppercase",fontWeight:"400",textAlign:"center"}}>Nothing To Deliver</h1>
             ) : (
                 state.basket.map((item) => {
-                    const { id, name, img_url, description, isVeg, price, rating } = item;
+                    const { id, name, img_url, description, isVeg, price, rating,sizeSelected,toppingName } = item;
+                    // console.log(toppingName.map(item=>console.log(item)))
                     return (
                         <div id="cartDisplay" key={id}>
                             <div className="cartItems">
@@ -43,7 +44,9 @@ function Cart() {
                                     <p>Type : {isVeg ? "Veg" : "Non Veg"}</p>
                                     <p>Price: INR {price} /-</p>
                                     <p>Rating: {rating}/5</p>
-
+                                    <p>{sizeSelected}</p>
+                                    {/* {toppingsSelected.map(item=><h3>{item}</h3>)} */}
+                                    {toppingName.map(name=><h1>{name}</h1>)}
                                     <button
                                         style={{ margin: "10px 0 5px 0" }}
                                         onClick={() => removeFromBasket(id)}

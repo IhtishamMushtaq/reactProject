@@ -1,3 +1,82 @@
+#toppingsSizeContainer{
+    width: 80%;
+    padding: 10px;
+}
+.errorDisplay{
+    width: fit-content;
+    margin: 10px auto;
+}
+
+#sizeContainer{
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#sizeContainer h6{
+    margin: 10px 0;
+}
+#toppingsHead{
+    
+    text-align: center;
+    width: fit-content;
+    margin: 30px auto;
+}
+#pizzaToppings{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+#pizzaToppings span{
+margin: 10px 10px;
+}
+#pizzaSize h5{
+    width: fit-content;
+    margin: 10px auto;
+}
+#checkoutButton{
+    margin: 20px auto;
+    width: fit-content;
+    display: block;
+}
+#pizzaToppings h6{
+    display: inline;
+    text-align: left;
+    margin: 10px 10px;
+    
+}
+
+#toppingsInside{
+    display: inline-flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 30%;
+
+}
+
+.btn-wrapper{
+    max-width: 768px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; 
+}
+.btn-wrapper button{
+    background: none;
+    width: fit-content;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 5px 8px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px auto;
+
+}
 .cart{
     min-width: 320px;
     height: 55vh;
@@ -19,58 +98,6 @@
     font-size: 40px;
     letter-spacing: 3px;
     
-}
-.linkContainer{
- 
-display: flex;
-width: fit-content;
-position: absolute;
-top: 5px;
-right: 10px;
-
-}
-.pageNavigator{
-    width: 30px;
-    font-size: 20px;
-    margin: 10px 10px;
-    text-transform: uppercase;
-    color: white;
-}
-#headerIntro{
-    
-    width: fit-content;
-    margin: 10px auto;
-    padding-bottom: 5px;
-    border-bottom: 2px solid red;
-}
-
-#filterHead{
-    
-    margin: 10px auto;
-    width: fit-content;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 18px;
-}
-.btn-wrapper{
-    max-width: 768px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; 
-}
-.btn-wrapper button{
-    background: none;
-    width: fit-content;
-    text-transform: uppercase;
-    font-size: 12px;
-    padding: 5px 8px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px auto;
-
 }
 .card-container{
     display: flexbox;
@@ -139,36 +166,6 @@ right: 10px;
     padding-bottom: 20px;
     
 }
-.itemImage{
-    width: 200px;
-    border-radius: 30px;
-
-}
-.itemDescription{
-margin: 10px;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-.itemDescription h1{
-    font-size: 14px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
-.itemDescription p{
-    font-size: 12px;
-    text-align: center;
-    margin: none;
-}
-.itemDescription button{
-    width: fit-content;
-    margin: 10px auto;
-    background:none;
-    border: 1px solid black;
-    padding: 5px 10px;
-    border-radius: 10px;
-}
 #clearButton{
     background: none;
     border: 2px solid black;
@@ -179,13 +176,14 @@ align-items: center;
     border-radius: 10px;
 
 }
-#totalAmount{
-    font-size: 20px;
-    font-weight: bold;
+#filterHead{
+    
     margin: 10px auto;
-    width: 90%;
-    text-align: center;
+    width: fit-content;
+    font-weight: bold;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
 }
 .footerWrapper{
     background-color: rgba(20, 20, 97, 0.747);
@@ -217,6 +215,77 @@ align-items: center;
     text-align: left;
 
 }
+#headerIntro{
+    
+    width: fit-content;
+    margin: 10px auto;
+    padding-bottom: 5px;
+    border-bottom: 2px solid red;
+}
+.itemImage{
+    width: 200px;
+    border-radius: 30px;
+
+}
+.itemDescription{
+margin: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.itemDescription h1{
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.itemDescription p{
+    font-size: 12px;
+    text-align: center;
+    margin: none;
+}
+.itemDescription button{
+    width: fit-content;
+    margin: 10px auto;
+    background:none;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.linkContainer{
+ 
+display: flex;
+width: fit-content;
+position: absolute;
+top: 5px;
+right: 10px;
+
+}
+.pageNavigator{
+    width: 30px;
+    font-size: 20px;
+    margin: 10px 10px;
+    text-transform: uppercase;
+    color: white;
+}
+.popup {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.popup h5{
+    width: fit-content;
+}
+#totalAmount{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px auto;
+    width: 90%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
 @media only screen and (min-width: 375px) {
     .card{
         width: 330px;
@@ -239,14 +308,16 @@ align-items: center;
     .card{
         width: 320px;
     }
-    .linkContainer a img{
-        transform: scale(1.6);
-        margin: 20px;
+    #filterHead{
+        font-size: 20px;
     }
     #headerIntro{
         font-size: 30px;
     }
-    #filterHead{
-        font-size: 20px;
+    .linkContainer a img{
+        transform: scale(1.6);
+        margin: 20px;
     }
+   
+
 }
